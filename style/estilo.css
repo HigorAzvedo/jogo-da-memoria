@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    height: 100vh;
     background-color: #c7cdd3;
 }
 
@@ -80,4 +80,18 @@ body{
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr ;
     gap: 20px;
+}
+
+@media only screen and (max-width: 549px){
+    
+    .card{
+        width: 80px;
+        height: 80px;
+    }
+    
+    #gameBoard{
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr ;
+        gap: 20px;
+    }
 }
